@@ -4,52 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/eb496abla0.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/eb496abla0.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/style-contact.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+
+    <link rel="icon" type="image/jpg" href="../assets/images/Favicon.png"/>
+    <title>The Beatles</title>
+
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="menu">
-                <img src="assets/images/logotest.png" alt="">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="gallery.html">Discografia</a></li>
-                        <li><a href="videos.html">Videos</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                    </ul>
-                </nav>
+        <header class="Header-Background">
+            <div id="UserPanel">
+                <a class="contact-btn" href="contact.html">Contacto</a>
+                <a class="shop-btn" href="shop.html">Shop</a>
+                <a class="media-btn" href="media.html">Media</a>
+                <a class="home-btn" href="index.html">Home</a> 
             </div>
         </header>
         <div class="contenido">
-            <div class="info-form">
-                <h2> Contactanos </h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, 
-                    dolorum omnis ullam vel accusamus consequuntur non, rem laudantium 
-                    quia soluta impedit fugit, explicabo et! Natus aut tempora accusamus 
-                    error culpa.</p>
-                <a href="#"><i class="fa fa-phone"></i>123-456-789</a>
-                <a href="#"><i class="fa fa-envelope"></i>email@ejemplo.com</a>
-                <a href="#"><i class="fa fa-map"></i>Ciudad, Pais</a>
-            </div>
-            <form action="#" autocomplete="off">
-                <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
-                <input type="email" name="email" placeholder="Ingresa tu email" class="campo">
-                <textarea type="text" name="mensaje" placeholder="Ingresa tu mensaje" class="campo"></textarea>
-                <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
-            </form>
+            <div class="contenido-form">
+                <div class="info-form">
+                    <h2> Contactanos </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, 
+                        dolorum omnis ullam vel accusamus consequuntur non, rem laudantium 
+                        quia soluta impedit fugit, explicabo et! Natus aut tempora accusamus 
+                        error culpa.</p>
+                    <a href="#"><i class="fa fa-phone"></i>123-456-789</a>
+                    <a href="#"><i class="fa fa-envelope"></i>email@ejemplo.com</a>
+                    <a href="#"><i class="fa fa-map"></i>Ciudad, Pais</a>
+                </div>
+                <form action="https://formsubmit.co/beatlescodoacodo@gmail.com" onsubmit="reset(); return false;" method="POST" autocomplete="off">
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
+                    <input type="email" name="email" placeholder="Ingresa tu email" class="campo">
+                    <textarea type="text" name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+                    <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5555/contact.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
             <!-- <div class="aside">
                 Aside
             </div> -->
+            </div>
         </div>
         <div class="footer">
-            Footer
+            <div id="footer-img"> 
+                <img src="../assets/images/Footer.png">
+            </div> 
         </div>
     </div>
-
 </body>
 </html>
