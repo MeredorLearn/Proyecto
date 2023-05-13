@@ -36,14 +36,12 @@
                     <a href="#"><i class="fa fa-envelope"></i>email@ejemplo.com</a>
                     <a href="#"><i class="fa fa-map"></i>Ciudad, Pais</a>
                 </div>
-                <form action="https://formsubmit.co/beatlescodoacodo@gmail.com" onsubmit="reset(); return false;" method="POST" autocomplete="off">
-                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
-                    <input type="email" name="email" placeholder="Ingresa tu email" class="campo">
-                    <textarea type="text" name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
-                    <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
+                <form id="form" autocomplete="off">
+                    <input type="text" name="from_name" id="from_name" placeholder="Ingresa tu nombre" class="campo">
+                    <input type="email" name="email_id" id="email_id" placeholder="Ingresa tu email" class="campo">
+                    <textarea type="text" name="message" id="message" placeholder="Ingresa tu mensaje"></textarea>
+                    <input type="submit" name="enviar" id="button" value="enviar mensaje" class="btn-enviar">
 
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5555/contact.html">
-                    <input type="hidden" name="_captcha" value="false">
                 </form>
             <!-- <div class="aside">
                 Aside
@@ -56,5 +54,13 @@
             </div> 
         </div>
     </div>
+    <script src="./js/contact.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        emailjs.init('yMnE3j3p9NOha-bdM')
+    </script>
 </body>
 </html>
