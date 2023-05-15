@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/jpg" href="../assets/images/Favicon.png"/>
+    <link rel="stylesheet" href="css/style-media.css">
+    <link rel="icon" type="image/jpg" href="../assets/images/Favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cinzel&display=swap" rel="stylesheet">
+
     <title>The Beatles</title>
 </head>
+
 <body>
     <div class="container">
         <header class="Header-Background">
@@ -15,19 +24,137 @@
                 <a class="contact-btn" href="contact.html">Contacto</a>
                 <a class="shop-btn" href="shop.html">Shop</a>
                 <a class="media-btn" href="media.html">Media</a>
-                <a class="home-btn" href="index.html">Home</a> 
+                <a class="home-btn" href="index.html">Home</a>
             </div>
         </header>
         <div class="contenido">
             <div class="section">
-                SECTION
+                <div class="contenido-media">
+                    <div class="info">
+                        <h1 class="titulo">Videos</h1>
+                        <section>
+                            <div class="container">
+                                <div class="card-section">
+                                    <div class="card">
+                                        <video src="./assets/videos/I Want To Hold Your Hand.mp4" autoplay controls>
+                                        </video>
+                                        <div class="subtitulo">
+                                            <p>The Beatles</p>
+                                            <p>I Want To Hold Your Hand</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <video src="./assets/videos/She Loves You REMASTERED.mp4" autoplay
+                                            controls></video>
+                                        <div class="subtitulo">
+                                            <p>The Beatles</p>
+                                            <p>She Loves You REMASTERED</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <video src="./assets/videos/Twist and Shout.mp4" autoplay controls></video>
+                                        <div class="subtitulo">
+                                            <p>The Beatles</p>
+                                            <p>Twist and Shout</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </section>
+                        <div class="content-imagen">
+                            <h1 class="titulo">Galeria</h1>
+                            <section id="imagenes-seccion">
+                                <div class="container">
+                                    <div class="card-section">
+                                        <div class="imagen">
+                                            <img class="imagen-style" src="./assets/images/The Beatles.jpg"
+                                                alt="imagen the beatles">
+                                            <p>The Beatles es una de las bandas más populares en la historia. Se fundó
+                                                en Liverpool en 1960,y en
+                                                solo unos pocos años se convirtió en una referencia en el rock and roll
+                                                en todo el mundo. Los nombres de sus integrantes
+                                                son por todos conocidos y las letras de sus canciones son un himno de la
+                                                cultura popular.</p>
+
+                                        </div>
+
+                                        <div class="imagen">
+                                            <img class="imagen-style" src="./assets/images/imagen 1.jpg"
+                                                alt="imagen the beatles">
+                                            <p>
+                                                “Lo importante es estar aquí y ahora. No hay pasado y no hay futuro. El
+                                                tiempo es una cosa muy engañosa. Todo lo que existe es el ahora”.
+                                                (George Harrison)
+                                            </p>
+                                        </div>
+
+                                        <div class="imagen">
+                                            <img class="imagen-style" src="./assets/images/imagen2.jpg"
+                                                alt="imagen the beatles">
+                                            <p>
+                                                “Sal y consigue la paz, piensa en la paz, vive la paz y respira la paz,
+                                                y la obtendrás tan pronto como quieras”. (John Lennon)
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </section>
+                        </div>
+                        <div class="content-audio">
+                            <h1 class="titulo">Audio</h1>
+                            <div class="grilla">
+                                <div>
+                                    <audio src="./assets/audio/The Beatles - Don't Let Me Down.mp3" preload="none"
+                                        controls></audio>
+                                    <p>The Beatles</p>
+                                    <p>Don't Let Me Down</p>
+                                </div>
+                                <div>
+                                    <audio src="./assets/audio/The Beatles - And I Love Her.mp3" preload="none"
+                                        controls></audio>
+                                    <p>The Beatles</p>
+                                    <p>And I Love Her</p>
+                                </div>
+                                <div>
+                                    <audio src="./assets/audio/The Beatles - Help.mp3" preload="none" controls></audio>
+                                    <p>The Beatles</p>
+                                    <p>Help</p>
+                                </div>
+                                <div>
+                                    <audio src="./assets/audio/The Beatles - Hey Jude.mp3" preload="none"
+                                        controls></audio>
+                                    <p>The Beatles</p>
+                                    <p>Hey Jude</p>
+                                </div>
+                                <div>
+                                    <audio src="./assets/audio/The Beatles - Something.mp3" preload="none"
+                                        controls></audio>
+                                    <p>The Beatles</p>
+                                    <p>Something</p>
+                                </div>
+                                <div>
+                                    <audio src="./assets/audio/Yesterday.mp3" preload="none" controls></audio>
+                                    <p>The Beatles</p>
+                                    <p>Yesterday</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
-            <div id="footer-img"> 
+            <div id="footer-img">
                 <img src="../assets/images/Footer.png">
-            </div> 
+            </div>
         </div>
     </div>
 </body>
+
 </html>

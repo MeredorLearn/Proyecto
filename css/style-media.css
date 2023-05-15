@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans serif';
+}
+
+.contenido-media {
+    width: 89%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.titulo {
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Cinzel', serif;
+    width: 85%;
+    font-size: 25px;
+    padding: 10px 0 50px;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 1rem;
+    color: orange;
+}
+
+.container {
+
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.card-section {
+
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.card video {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.75rem;
+    transition: all 500ms ease-out;
+
+}
+
+
+.subtitulo {
+    color: #ffffff
+}
+
+.content-imagen {
+
+    border-radius: 2px;
+    justify-content: center;
+    text-align: center;
+    height: 21px;
+    color: #ffffff;
+    height: auto;
+    width: 89%;
+    margin: 100px 50px 10px 15px;
+
+}
+
+.content-imagen h2 {
+    padding-bottom: 35px;
+}
+
+.imagen {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+
+}
+
+.imagen-style {
+    border-radius: 63px;
+    width: 300px;
+    height: 300px;
+    padding-bottom: 30px;
+}
+
+.content-audio {
+    border-radius: 2px;
+    justify-content: center;
+    text-align: center;
+    height: 21px;
+    height: auto;
+    width: 89%;
+    margin: 180px 50px 0px 15px;
+}
+
+.grilla {
+    padding: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    margin: 30px auto;
+    font-size: 50px;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 400px 400px 400px;
+}
+
+.grilla div {
+    padding: 20px;
+}
+
+.grilla div p {
+    font-size: 20px;
+    margin-bottom: -24px;
+}
