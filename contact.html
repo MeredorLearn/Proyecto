@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://kit.fontawesome.com/eb496abla0.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/style-contact.css">
@@ -37,14 +36,14 @@
                     <a href="#"><i class="fa fa-map"></i>Ciudad, Pais</a>
                 </div>
                 <form id="form" autocomplete="off">
-                    <input type="text" name="from_name" id="from_name" placeholder="Ingresa tu nombre" class="campo">
-                    <input type="email" name="email_id" id="email_id" placeholder="Ingresa tu email" class="campo">
-                    <textarea type="text" name="message" id="message" placeholder="Ingresa tu mensaje"></textarea>
-                    <input type="submit" name="enviar" id="button" value="enviar mensaje" class="btn-enviar">
+                    <label style="color: red;" id="lblName" >Debe ingresas nombre</label>
+                    <input type="text" name="from_name" id="from_name" placeholder="Ingresa tu nombre" class="campo" onkeyup="validarFormulario()">
+                    <label style="color: red;" id="lblEmail">Debe ingresa email valido</label>
+                    <input type="email" name="email_id" id="email_id" placeholder="Ingresa tu email" class="campo" onkeyup="validarFormulario()">
+                    <label style="color: red;" id="lblMensaje">Debe ingresar mensaje</label>
+                    <textarea type="text" name="message" id="message" placeholder="Ingresa tu mensaje" onkeyup="validarFormulario()"></textarea>
+                    <input type="submit" name="enviar" id="button" value="enviar mensaje" class="btn-enviar" disabled>
                 </form>
-            <!-- <div class="aside">
-                Aside
-            </div> -->
             </div>
         </div>
         <div class="footer">
@@ -59,7 +58,61 @@
     </script>
 
     <script type="text/javascript">
-        emailjs.init('yMnE3j3p9NOha-bdM')
+        emailjs.init('yMnE3j3p9NOha-bdM');
+        var submitButton = document.getElementById("button");
+        submitButton.disabled = true;
+
+        function validarFormulario() {
+            var nameInput = document.getElementById("from_name");
+            var emailInput = document.getElementById("email_id");
+            var messageInput = document.getElementById("message");
+            var submitButton = document.getElementById("button");
+            var lblName = document.getElementById("lblName");
+            var lblEmail = document.getElementById("lblEmail");
+            var lblMensaje = document.getElementById("lblMensaje");
+            
+            var emailValido=validarEmail(emailInput.value);
+
+            if (nameInput.value && emailValido && messageInput.value) {
+
+                submitButton.disabled = false;
+                lblName.style.visibility="hidden";
+                lblEmail.style.visibility="hidden";
+                lblMensaje.style.visibility="hidden";
+            } else {
+                submitButton.disabled = true;
+                if (!nameInput.value){
+                    lblName.style.visibility="visible";
+                }else{
+                    lblName.style.visibility="hidden";
+                }
+                if (!emailValido){
+                    lblEmail.style.visibility="visible";
+                }else{
+                    lblEmail.style.visibility="hidden";
+                }
+                if (!messageInput.value){
+                    lblMensaje.style.visibility="visible";
+                }else{
+                    lblMensaje.style.visibility="hidden";
+                }
+            }
+        }
+
+        function validarEmail(email) {
+            // Expresión regular para validar el formato del correo electrónico
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            // Comprobar si el correo electrónico coincide con la expresión regular
+            if (regex.test(email)) {
+                console.log("mail valido");
+                return true; // El correo electrónico es válido
+            } else {
+                console.log("mail invalido");
+                return false; // El correo electrónico no es válido
+            }
+        }
+
     </script>
 </body>
 </html>

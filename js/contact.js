@@ -13,8 +13,10 @@ formulario = document.getElementById('form')
     .then(() => {
       btn.value = 'Send Email';
       alert('Mensaje enviado!');
+      
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
+
     });
 });
