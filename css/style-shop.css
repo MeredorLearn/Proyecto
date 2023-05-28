@@ -1,3 +1,36 @@
+.contenido-shop{
+    border: 1px solid #c4c4c4;
+    border-radius: 1em;
+    height: 80%;
+    margin: 1em 0;
+    background: #000000 ;
+    overflow-y: auto;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 90%;
+    
+  }
+  
+  .item {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product {
+    width: 100%;
+    height: auto;
+  }
+
+/* 
 .product1 {
     display: flex;
     align-items: center;
@@ -22,4 +55,4 @@
     display: flex;
     align-items: center;
     margin-bottom:80px;
-}
+} */
