@@ -1,0 +1,25 @@
+.product1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.product2 {
+    display: flex;
+    align-items: right;
+    margin-bottom: 40px;
+    margin-left: 300px;
+}
+
+.product3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.product4 {
+    display: flex;
+    align-items: center;
+    margin-bottom:80px;
+}
